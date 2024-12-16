@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #0a1a24;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(45deg, #136a8a, #267871);
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px #041d2c;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #22d1ee;
+}
+
+.container {
+    flex: 1;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    margin-bottom: 100px;
+}
+
+.mantis-section {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #136a8a;
+    padding-bottom: 1rem;
+}
+
+.mantis-section h2 {
+    font-size: 2rem;
+    color: #22d1ee;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px #041d2c;
+}
+
+.mantis-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: #041d2c;
+    border: 1px solid #136a8a;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mantis-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+.mantis-info img {
+    width: 20vw;
+    border-radius: 8px;
+    border: 2px solid #22d1ee;
+}
+
+.mantis-info p {
+    color: #d4f1f4;
+    line-height: 1.5;
+}
+
+footer {
+    background: #136a8a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #22d1ee;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .mantis-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mantis-info img {
+        width: 100%;
+    }
+}
